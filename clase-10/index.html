@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modos de escritura</title>
+</head>
+<style>
+
+  .card {
+    background: black;
+    color: white;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+  }
+  .card1{
+    direction: rtl;
+    writing-mode: vertical-rl;
+  }
+  .card2{
+    direction: rtl;
+    writing-mode: vertical-lr;
+  }
+  .card3{
+    direction: rtl;
+    writing-mode:horizontal-tb;
+  }
+  .card4{
+    direction: rtl;
+    writing-mode: sideways-lr;
+  }
+  .card5{
+    direction: rtl;
+    writing-mode: sideways-rl;
+  }
+
+</style>
+
+<body>
+  <div class="card card1">
+    <p>direction: rtl</p>
+    <p>writing-mode: vertical-rl</p>
+  </div>
+  <div class="card card2">
+    <p>direction: rtl</p>
+    <p>writing-mode: vertical-lr</p>
+  </div>
+  <div class="card card3">
+    <p>direction: rtl</p>
+    <p>writing-mode: horizontal-tb</p>
+  </div>
+  <div class="card card4">
+    <p>direction: rtl</p>
+    <p>writing-mode: sideways-lr</p>
+  </div>
+  <div class="card card5">
+    <p>direction: rtl</p>
+    <p>writing-mode: sideways-rl</p>
+  </div>
+</body>
+
+</html>
