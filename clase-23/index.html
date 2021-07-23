@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubicación</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "item-1 item-2"
+        "item-3 item-3";
+      width: 500px;
+      height: 400px;
+    }
+
+    .item1 {
+      background: #81ccf1;
+      grid-area: item-1;
+    }
+
+    .item2 {
+      background: #efc66a;
+      grid-area: item-2;
+    }
+
+    .item3 {
+      background: #d8a6cb;
+      grid-area: item-3
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+  </div>
+</body>
+
+</html>
