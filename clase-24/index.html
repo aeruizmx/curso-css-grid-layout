@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alineamiento</title>
+  <style>
+    .container{
+      background: papayawhip;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 200px;
+      height: 200px;
+    }
+    .item:nth-child(1){
+      background: hotpink;
+      justify-self: start;
+    }
+    .item:not(:nth-child(1)){
+      background: turquoise;
+    }
+    
+    .item2:nth-child(1){
+      background: hotpink;
+      align-self: start;
+    }
+    .item2:not(:nth-child(1)){
+      background: turquoise;
+    }
+    .item3:nth-child(1){
+      background: hotpink;
+      place-self: stretch;
+    }
+    .item3:not(:nth-child(1)){
+      background: turquoise;
+    }
+    .item4:nth-child(1){
+      background: hotpink;
+      place-self: center;
+    }
+    .item4:not(:nth-child(1)){
+      background: turquoise;
+    }
+    .item5:nth-child(1){
+      background: hotpink;
+      place-self: center stretch;
+    }
+    .item5:not(:nth-child(1)){
+      background: turquoise;
+    }
+  </style>
+</head>
+<body>
+  <p>justify-self: start;</p>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+  <p>align-self: start;</p>
+  <div class="container">
+    <div class="item2">1</div>
+    <div class="item2">2</div>
+    <div class="item2">3</div>
+    <div class="item2">4</div>
+  </div>
+  <p>place-self: strech;</p>
+  <div class="container">
+    <div class="item3">1</div>
+    <div class="item3">2</div>
+    <div class="item3">3</div>
+    <div class="item3">4</div>
+  </div>
+  <p>place-self: center;</p>
+  <div class="container">
+    <div class="item4">1</div>
+    <div class="item4">2</div>
+    <div class="item4">3</div>
+    <div class="item4">4</div>
+  </div>
+  <p>place-self: center strech;</p>
+  <div class="container">
+    <div class="item5">1</div>
+    <div class="item5">2</div>
+    <div class="item5">3</div>
+    <div class="item5">4</div>
+  </div>
+</body>
+</html>
